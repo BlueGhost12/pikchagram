@@ -1,24 +1,39 @@
+import { Grid } from '@material-ui/core';
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import Description from './components/Description/Description';
+import Header from './components/Header/Header'
+import ImageGrid from './components/ImageGrid/ImageGrid';
+import UploadForm from './components/UploadForm/UploadForm';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="App" >
+      <Grid
+      container
+      direction="column"
+      justify="center"
+      alignItems="center"
+      spacing={6}
+      >
+        <Grid 
+        justify="center"
+        alignItems="center"
+        container 
+        item 
+        sm={2}>
+          <Header/>
+        </Grid>
+        <Grid container item sm={4}>
+          <Description/>
+        </Grid>
+        <Grid container item sm={6}>
+          <UploadForm/>
+        </Grid>
+        <Grid container item sm={6}>
+          <ImageGrid/>
+        </Grid>
+      </Grid>
     </div>
   );
 }

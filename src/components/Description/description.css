@@ -1,0 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Noto+Serif&family=Ranchers&family=Roboto:wght@100;300;400;500;700&display=swap');
+.major_header {
+    padding: 20px;
+    color: gray;
+    font-family: "Noto Serif";
+}
+
+.minor_header {
+    color: gray;
+    font-family: "Noto Serif";
+}
